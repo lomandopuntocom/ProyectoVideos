@@ -1,0 +1,67 @@
+.banner
+{
+    width: 1369px;
+    height: 718px;
+}
+
+.montserrat 
+{
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.video-list
+{
+  width: 1270px;
+  height: 342px;
+  overflow-x: scroll;
+  display: flex;
+  scrollbar-width: none;
+}
+
+.video-card
+{
+  width: 456px;
+  height: 342px;
+  list-style: none;
+  margin-right: 114px;
+}
+
+.video-image
+{
+  width: 342px;
+  height: 205px;
+}
+
+.button-style
+{
+  width: 240px;
+  height: 48px;
+  background-color: #1BA0F2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.category-card
+{
+  list-style: none;
+  width: 380px;
+  height: 560px;
+  border: 1px black solid;
+}
+.category-text
+{
+  padding: 20px;
+  width: 266px;
+  height: auto;
+}
+
+.banner
+{
+  width: 1360px;
+  height: 563px;
+}
