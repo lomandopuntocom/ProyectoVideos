@@ -1,0 +1,19 @@
+.main_thumbnail
+{
+    background-image: url('../../assets/thumbnails/main_thumbnail.png'); 
+    width: 833px; 
+    height: 504px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.description
+{
+    width: 328px;
+    height: 462px;
+    background-color: #CFCFCF;
+    padding: 1%;
+    margin-top: 1.5%;
+    border-radius: 20px;
+}
