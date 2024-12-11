@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   selector: 'editarperfil',
   templateUrl: './editarperfil.component.html',
 })
-export class EditarComponent {
+export class EditarPerfilComponent {
 }
