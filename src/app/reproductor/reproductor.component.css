@@ -1,3 +1,14 @@
+<<<<<<< Updated upstream
+=======
+
+.montserrat 
+{
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 10px;
+}
+>>>>>>> Stashed changes
 .main_thumbnail
 {
     background-image: url('../../assets/thumbnails/main_thumbnail.png'); 
@@ -16,4 +27,27 @@
     padding: 1%;
     margin-top: 1.5%;
     border-radius: 20px;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+.list-container
+{
+    width: 1360px;
+    height: 808px;
+    margin-left: -30px;
+}
+ ul
+ {
+    list-style: none;
+    width: 1340px;
+    height: 241px;
+ }
+
+ li
+ {
+    width: 276px;
+    height: 213px;
+ }
+>>>>>>> Stashed changes
