@@ -1,0 +1,41 @@
+.user_info
+{
+    width: 807px;
+    height: 398px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+
+.list-container
+{
+    width: 1360px;
+    height: 808px;
+    margin-left: -30px;
+}
+ 
+ul
+{
+    list-style: none;
+    width: 1340px;
+    height: 241px;
+}
+
+li
+{
+    width: 276px;
+    height: 213px;
+}
+
+.button-style
+{
+  width: 112px;
+  height: 40px;
+  background-color: #2C2C2C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
