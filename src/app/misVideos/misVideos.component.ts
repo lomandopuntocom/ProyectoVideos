@@ -10,87 +10,86 @@ export class MisVideosComponent {
   videos = [
     {
       thumbnail: 'path/to/image1.jpg',
-      title: 'Introducción a la Programación',
-      channel: 'Cursos Online',
-      date: '2 years ago',
-      count: '12+'
+      title: 'Curso de Matemáticas Básicas',
+      channel: 'Educación Plus',
+      uploadDate: '2023-01-01',
+      viewedDate: '2024-12-01'
     },
     {
-      thumbnail: 'path/to/image2.jpg',
-      title: 'Aprende Matemáticas Básicas',
-      channel: 'Academia Virtual',
-      date: '1 year ago',
-      count: '8+'
-    },
-    {
-      thumbnail: 'path/to/image3.jpg',
-      title: 'Historia Universal Moderna',
-      channel: 'EduHistoria',
-      date: '6 months ago',
-      count: '15+'
-    },
-    {
-      thumbnail: 'path/to/image4.jpg',
-      title: 'Fundamentos de Física',
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Introducción a la Física',
       channel: 'Ciencia Fácil',
-      date: '3 years ago',
-      count: '10+'
+      uploadDate: '2023-02-15',
+      viewedDate: '2024-11-15'
     },
     {
-      thumbnail: 'path/to/image5.jpg',
-      title: 'Introducción a la Psicología',
-      channel: 'PsicoAprende',
-      date: '2 years ago',
-      count: '9+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Historia del Arte Moderno',
+      channel: 'Arte para Todos',
+      uploadDate: '2023-03-10',
+      viewedDate: '2024-10-30'
     },
     {
-      thumbnail: 'path/to/image6.jpg',
-      title: 'Química para Principiantes',
-      channel: 'Ciencia Fácil',
-      date: '5 months ago',
-      count: '20+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Aprende a Programar en JavaScript',
+      channel: 'CodeAcademy',
+      uploadDate: '2023-04-20',
+      viewedDate: '2024-09-20'
     },
     {
-      thumbnail: 'path/to/image7.jpg',
-      title: 'Inglés Básico para Todos',
-      channel: 'Idiomas Online',
-      date: '1 year ago',
-      count: '18+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Química Orgánica para Principiantes',
+      channel: 'Química Fácil',
+      uploadDate: '2023-05-05',
+      viewedDate: '2024-08-10'
+    },{
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Técnicas de Escritura Creativa',
+      channel: 'Escribir Mejor',
+      uploadDate: '2023-06-18',
+      viewedDate: '2024-07-25'
     },
     {
-      thumbnail: 'path/to/image8.jpg',
-      title: 'Diseño Gráfico desde Cero',
-      channel: 'Creatividad Digital',
-      date: '3 years ago',
-      count: '25+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Biología: El Reino Animal',
+      channel: 'BioMundo',
+      uploadDate: '2023-07-25',
+      viewedDate: '2024-06-15'
     },
     {
-      thumbnail: 'path/to/image9.jpg',
-      title: 'Introducción al Marketing Digital',
-      channel: 'Marketing Pro',
-      date: '1 year ago',
-      count: '7+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Geografía Física y Humana',
+      channel: 'GeoAprende',
+      uploadDate: '2023-08-12',
+      viewedDate: '2024-05-20'
     },
     {
-      thumbnail: 'path/to/image10.jpg',
-      title: 'Aprende a Dibujar',
-      channel: 'Arte en Línea',
-      date: '2 months ago',
-      count: '22+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Filosofía para Principiantes',
+      channel: 'Pensar Mejor',
+      uploadDate: '2023-09-01',
+      viewedDate: '2024-04-15'
     },
     {
-      thumbnail: 'path/to/image11.jpg',
-      title: 'Curso de Fotografía Básica',
-      channel: 'FotoMaestros',
-      date: '4 years ago',
-      count: '5+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Técnicas de Estudio Efectivas',
+      channel: 'Aprender Más',
+      uploadDate: '2023-10-10',
+      viewedDate: '2024-03-10'
     },
     {
-      thumbnail: 'path/to/image12.jpg',
-      title: 'Finanzas Personales para Principiantes',
-      channel: 'EduFinanzas',
-      date: '6 months ago',
-      count: '11+'
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Psicología del Aprendizaje',
+      channel: 'Mente Activa',
+      uploadDate: '2023-11-05',
+      viewedDate: '2024-02-05'
+    },
+    {
+      thumbnail: 'https://via.placeholder.com/120x67',
+      title: 'Historia de la Tecnología',
+      channel: 'TecnoHistoria',
+      uploadDate: '2023-12-01',
+      viewedDate: '2024-01-15'
     }
   ];
   
