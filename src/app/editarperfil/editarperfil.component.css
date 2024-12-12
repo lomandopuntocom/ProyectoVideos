@@ -1,0 +1,38 @@
+button
+{
+  width: 240px;
+  height: 48px;
+  background-color: #1BA0F2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 20px;
+}
+
+.info
+{
+    width: 1360px;
+    height: 694px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.info2
+{
+    width: 760px;
+    height: 653px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-left: 2%;
+    padding: 2%;
+}
+
+.info3
+{
+    width: 195px;
+    height: 228px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
