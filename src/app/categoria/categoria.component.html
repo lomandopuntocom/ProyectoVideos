@@ -31,11 +31,14 @@
                 <div class="video-grid">
                     <div class="video-card" *ngFor="let video of curso.videos">
                         <img class="video-thumbnail" [src]="'/assets/video-placeholder.jpg'" alt="Video thumbnail">
-                        <div class="video-info">
-                            <h3 class="video-title">{{ video.titulo }}</h3>
-                            <p class="video-channel">by {{ video.docente }}</p>
-                            <p class="video-date">{{ video.duracion }}</p>
-                        </div>
+                        <a href="reproductor">
+                            <div class="video-info">
+                                <h3 class="video-title">{{ video.titulo }}</h3>
+                                <p class="video-channel">by {{ video.docente }}</p>
+                                <p class="video-date">{{ video.duracion }}</p>
+                            </div>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
