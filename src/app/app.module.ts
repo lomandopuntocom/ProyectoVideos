@@ -9,17 +9,18 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { testComponent } from './test/test.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent, About2Component, About3Component } from './about/about.component';
+
 import { AdministrarVideosComponent } from './administrarVideos/administrarVideos.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { ConfiguracionNotificacionesComponent } from './configuracionNotificaciones/configuracionNotificaciones.component';
 import { ConfiguracionReproduccionComponent } from './configuracionReproduccion/configuracionReproduccion.component';
-import { ContactoySoporteComponent } from './contactoysoporte/contactoysoporte.component';
+import { ContactoySoporteComponent, ContactoySoporte2Component, ContactoySoporte3Component } from './contactoysoporte/contactoysoporte.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { EditarPerfilComponent } from './editarperfil/editarperfil.component';
 import { FooterComponent } from './footer/footer.component';
-import { GuiayRecursosComponent } from './guiayrecursos/guiayrecursos.component';
+import { GuiayRecursosComponent, GuiayRecursos2Component, GuiayRecursos3Component } from './guiayrecursos/guiayrecursos.component';
 import { HistorialVideosComponent } from './historialvideos/historialvideos.component';
 import { MisCursosComponent } from './misCursos/misCursos.component';
 import { MisVideosComponent } from './misVideos/misVideos.component';
@@ -36,6 +37,8 @@ import { VideosComponent } from './videos/videos.component';
     CounterComponent,
     testComponent,
     AboutComponent,
+    About2Component,
+    About3Component,
     AdministrarVideosComponent,
     CategoriaComponent,
     CategoriasComponent,
@@ -62,16 +65,22 @@ import { VideosComponent } from './videos/videos.component';
       { path: 'counter', component: CounterComponent },
       { path: 'test', component: testComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'about2', component: About2Component},
+      { path: 'about3', component: About3Component},
       { path: 'administrarvideos', component: AdministrarVideosComponent },
       { path: 'categoria', component: CategoriaComponent },
       { path: 'categorias', component: CategoriasComponent },
       { path: 'configuracionNotificaciones', component: ConfiguracionNotificacionesComponent },
       { path: 'configuracionReproduccion', component: ConfiguracionReproduccionComponent },
       { path: 'contactoysoporte', component: ContactoySoporteComponent },
+      { path: 'contactoysoporte2', component: ContactoySoporte2Component},
+      { path: 'contactoysoporte3', component: ContactoySoporte3Component},
       { path: 'cursos', component: CursosComponent },
       { path: 'editarperfil', component: EditarPerfilComponent },
       { path: 'footer', component: FooterComponent },
       { path: 'guiayrecursos', component: GuiayRecursosComponent },
+      { path: 'guiayrecursos2', component: GuiayRecursos2Component },
+      { path: 'guiayrecursos3', component: GuiayRecursos3Component },
       { path: 'historialvideos', component: HistorialVideosComponent },
       { path: 'misCursos', component: MisCursosComponent },
       { path: 'misVideos', component: MisVideosComponent },
