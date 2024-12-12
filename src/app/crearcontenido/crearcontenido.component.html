@@ -1,0 +1,25 @@
+<div class="overlay" *ngIf="isFormOpen" (click)="closeForm()"></div>
+<div class="form-popup" *ngIf="isFormOpen">
+  <h2>Subir Video</h2>
+  <form (submit)="submitForm()">
+    <h6 for="name">Nombre del Video:</h6>
+    <input id="name" type="text" [(ngModel)]="formData.name" name="name" required>
+
+    <h6 for="email">Etiquetas:</h6>
+    <label>Agrega etiquetas que categorizen mejor tu curso y sea mas facil de encontrar.</label>
+    <input id="email" type="email" [(ngModel)]="formData.email" name="email" required>
+
+    <h6 for="message">Insertar Video:</h6>
+    <label>Este apartado es opcional, dara diseño y buena estetica a tu curso.</label>
+    <textarea id="message" [(ngModel)]="formData.message" name="message" required></textarea>
+
+    <h6 for="description">Descripcion:</h6>
+    <label>Escribe una pequeña introduccion para tus estudiantes.</label>
+    <textarea id="description" [(ngModel)]="formData.description" name="description" required></textarea>
+
+    <div class="form-buttons">
+      <button type="submit" class="btn-submit">Subir Video</button>
+      <button type="button" class="btn-cancel" (click)="closeForm()">Cancelar</button>
+    </div>
+  </form>
+</div>

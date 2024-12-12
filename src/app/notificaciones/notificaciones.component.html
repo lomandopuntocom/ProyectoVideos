@@ -1,0 +1,21 @@
+<div class="notification-container" [class.active]="isOpen">
+    <a (click)="toggleMenu()">
+      <img src="../../assets/icons/Notificacion.png" alt="Notificaciones" class="icon">
+    </a>
+    <div class="menu-popup" *ngIf="isOpen">
+      <h4>Notificaciones</h4>
+      <ul>
+        <li *ngFor="let notification of notifications; let i = index">
+          <img 
+            [src]="notification.leido ? '../../assets/icons/image 17.png' : '../../assets/icons/image 14.png'" 
+            alt="Estado de notificación"
+            class="icon"
+            (click)="toggleReadStatus(i)">
+          {{ notification.mensaje }}
+        </li>
+      </ul>
+      <button (click)="markAllAsRead()">Marcar todo como leído</button>
+    </div>
+  </div>
+  
+  

@@ -1,40 +1,43 @@
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-left">
-          <a href="">
-            <img src="../../assets/icons/LogoUCB.png" alt="Logo UCB" class="navbar-logo">
-          </a>
-          <a href="videos">
-            <img src="../../assets/icons/Videos Tendencia.png" alt="Videos" style="padding-left: 10px;">
-          </a>
-          <a href="">
-            <img src="../../assets/icons/Agregar Video.png" alt="Creación" style="padding-left: 10px;">
-          </a>
-        </div>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-left">
+            <a href="">
+              <img src="../../assets/icons/LogoUCB.png" alt="Logo UCB" class="navbar-logo">
+            </a>
+            <a href="videos">
+              <img src="../../assets/icons/Videos Tendencia.png" alt="Videos" style="padding-left: 10px;">
+            </a>
+            <a href="" (click)="openForm($event)">
+              <img src="../../assets/icons/Agregar Video.png" alt="Creación" style="padding-left: 10px;">
+            </a>
+          </div>
 
-        <div class="navbar-center">
-          <div class="search-bar">
-            <input type="text" placeholder="Buscar" class="search-input">
-            <button class="search-button">
-              <img src="../../assets/icons/Search.png" alt="Buscar">
+          <div class="navbar-center">
+            <div class="search-bar">
+              <input type="text" placeholder="Buscar" class="search-input">
+              <button class="search-button">
+                <img src="../../assets/icons/Search.png" alt="Buscar">
+              </button>
+            </div>
+          </div>
+
+          <div class="navbar-right">
+            <button class="icon-btn" (click)="toggleNotificationMenu($event)">
+              <notificaciones></notificaciones>
             </button>
+            
+            <a href="perfil">
+              <img src="../../assets/icons/Perfil.png" alt="Usuario" class="icon">
+            </a>
+            <a href="configuracionNotificaciones">
+              <img src="../../assets/icons/Configuracion.png" alt="Configuración" class="icon">
+            </a>
           </div>
         </div>
+      </nav>
+    </header>
+  </body>
 
-        <div class="navbar-right">
-          <a href="">
-            <img src="../../assets/icons/Notificacion.png" alt="Notificaciones" class="icon">
-          </a>
-          <a href="perfil">
-            <img src="../../assets/icons/Perfil.png" alt="Usuario" class="icon">
-          </a>
-          <a href="configuracionNotificaciones">
-            <img src="../../assets/icons/Configuracion.png" alt="Configuración" class="icon">
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header>
-</body>
+  <crearcontenido></crearcontenido>

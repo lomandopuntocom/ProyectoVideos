@@ -27,6 +27,8 @@ import { MisVideosComponent } from './misVideos/misVideos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ReproductorComponent } from './reproductor/reproductor.component';
 import { VideosComponent } from './videos/videos.component';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
+import { CrearContenidoComponent } from './crearcontenido/crearcontenido.component';
 
 
 @NgModule({
@@ -55,6 +57,8 @@ import { VideosComponent } from './videos/videos.component';
     PerfilComponent,
     ReproductorComponent,
     VideosComponent,
+    NotificacionesComponent,
+    CrearContenidoComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -87,6 +91,8 @@ import { VideosComponent } from './videos/videos.component';
       { path: 'perfil', component: PerfilComponent },
       { path: 'reproductor', component: ReproductorComponent },
       { path: 'videos', component: VideosComponent },
+      { path: 'notificaciones', component: NotificacionesComponent },
+      { path: 'crearcontenido', component: CrearContenidoComponent },
     ])
   ],
   providers: [],

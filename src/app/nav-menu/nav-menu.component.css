@@ -76,7 +76,11 @@ body {
   height: 24px;
   cursor: pointer;
 }
-
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .search-bar {
