@@ -1,1 +1,48 @@
-<h1>  CATEGORIA  </h1>
+<div class="stack-container">
+    <div class="stack-containerHorizontal"> 
+        <div class="stack-container"> 
+            <p>Nombre del curso</p>
+            <div class="stack-item">
+                <h2>{{ curso.titulo }}</h2>
+                <p>{{ curso.categoria }}</p>
+            </div>
+            <p class="parrafo">Detalle del curso</p>
+            <div class="stack-item">
+                <p>{{ curso.docente }}</p>
+                <p>{{ curso.videosCount }}</p>
+                <p>{{ curso.fechaPublicacion }}</p>
+            </div>
+            <p class="parrafo">Cursos previos necesarios</p>
+            <div class="stack-item">
+                <p *ngFor="let necesario of curso.necesarios">
+                    {{ necesario }}
+                </p>
+            </div>
+            <div class="stack-item">
+                <h2>Añadir/Quitar</h2>
+                <div class="stack-container">
+                    <button>añadir</button>
+                    <button>eliminar</button>
+                </div>
+            </div>
+        </div>
+        <div class="stack-container"> 
+            <div class="stack-item">
+                <div class="video-grid">
+                    <div class="video-card" *ngFor="let video of curso.videos">
+                        <img class="video-thumbnail" [src]="'/assets/video-placeholder.jpg'" alt="Video thumbnail">
+                        <div class="video-info">
+                            <h3 class="video-title">{{ video.titulo }}</h3>
+                            <p class="video-channel">by {{ video.docente }}</p>
+                            <p class="video-date">{{ video.duracion }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

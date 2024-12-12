@@ -1,1 +1,26 @@
-<h1>  CATEGORIAS  </h1>
+<div class="stack-container">
+    <h1>Categorias de Cursos</h1>
+    <h3 style="font-weight: 100;">Encuentra facilmente tu tipo de curso!</h3>
+    <h3 style="font-weight: 100;">Explora la lista de categorias que tenemos disponibles para ti.</h3>
+    <div class="stack-container">
+        <div *ngFor="let categoria of categorias">
+            <!-- Subtítulo para cada fila -->
+            <h2 class="categoria-titulo">{{ categoria.nombre }}</h2>
+            <div class="curso-grid">
+                <!-- Tarjetas dentro de la fila -->
+                
+                <div class="curso-card" *ngFor="let curso of categoria.cursos">
+                    <img class="curso-thumbnail" [src]="'/assets/video-placeholder.jpg'" alt="Video thumbnail">
+                    <a href="categoria">
+                    <div class="curso-info">
+                        <h3 class="curso-title">{{ curso.titulo }}</h3>
+                        <p class="curso-channel">by {{ curso.docente }}</p>
+                        <p class="curso-date">{{ curso.fechaPublicacion }}</p>
+                    </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
