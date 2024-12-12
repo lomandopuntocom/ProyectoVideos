@@ -1,1 +1,23 @@
-<h1>  ADMINISTRAR VIDEOS  </h1>
+<div class="video-history">
+    <!-- Encabezados de las columnas -->
+    <div class="header-row">
+      <span>Miniatura</span>
+      <span>Título</span>
+      <span>Fecha</span>
+      <span>Aprobación</span>
+    </div>
+
+    <!-- Lista de videos -->
+    <div *ngFor="let video of videos" class="video-item">
+        <img [src]="video.thumbnail" alt="Thumbnail" class="video-thumbnail">
+      <div class="video-info">
+        <h3>{{ video.title }}</h3>
+        <p>{{ video.channel }}</p>  
+      </div>
+      <span>{{ video.uploadDate }}</span>
+      <div class="approval-buttons">
+        <button class="approve-button">Aprobar</button>
+        <button class="reject-button">Rechazar</button>
+      </div>
+    </div>
+</div>

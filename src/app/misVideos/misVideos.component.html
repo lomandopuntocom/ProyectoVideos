@@ -1,17 +1,24 @@
-<div class="video-grid">
-    <div *ngFor="let video of videos" class="video-card">
-      <div class="video-thumbnail-container">
-        <img [src]="video.thumbnail" alt="Thumbnail" class="video-thumbnail">
-        <div class="video-overlay">
-          <span class="video-count">{{ video.count }}</span>
-          <span class="video-icon">⏯</span>
-        </div>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">{{ video.title }}</h3>
-        <p class="video-channel">{{ video.channel }}</p>
-        <p class="video-date">{{ video.date }}</p>
-      </div>
-    </div>
+<div class="video-history">
+  <!-- Encabezados de las columnas -->
+  <div class="header-row">
+    <span>Miniatura</span>
+    <span>Título</span>
+    <span>Fecha</span>
+    <span>Editar</span>
   </div>
-  
+
+  <!-- Lista de videos -->
+  <div *ngFor="let video of videos" class="video-item">
+      <img [src]="video.thumbnail" alt="Thumbnail" class="video-thumbnail">
+      <div class="video-info">
+          <h3>{{ video.title }}</h3>
+          <p>{{ video.channel }}</p>  
+      </div>
+      <span>{{ video.uploadDate }}</span>
+      <div class="action-buttons">
+          <button class="action-button">Esconder</button>
+          <button class="action-button">Editar</button>
+          <button class="action-button">Borrar</button>
+      </div>
+  </div>
+</div>

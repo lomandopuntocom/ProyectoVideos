@@ -1,1 +1,17 @@
-<h1>  MIS CURSOS  </h1>
+<div class="video-grid">
+    <div *ngFor="let video of cursos" class="video-card">
+      <div class="video-thumbnail-container">
+        <img [src]="video.thumbnail" alt="Thumbnail" class="video-thumbnail">
+        <div class="video-overlay">
+          <span class="video-count">{{ video.count }}</span>
+          <span class="video-icon">⏯</span>
+        </div>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">{{ video.title }}</h3>
+        <p class="video-channel">{{ video.channel }}</p>
+        <p class="video-date">{{ video.date }}</p>
+      </div>
+    </div>
+  </div>
+  

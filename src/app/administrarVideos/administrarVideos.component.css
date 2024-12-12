@@ -1,0 +1,105 @@
+
+/* Contenedor general de historial de videos */
+.video-history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Fila de encabezados */
+.header-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.header-row span {
+    padding: 5px;
+}
+
+/* Elementos de video */
+.video-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.video-item:hover {
+    background-color: #f9f9f9;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 67px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.video-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.video-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Fechas */
+.video-item span {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Botones de aprobación */
+.approval-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.approve-button, .reject-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.approve-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.approve-button:hover {
+    background-color: #45a049;
+}
+
+.reject-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.reject-button:hover {
+    background-color: #da190b;
+}
+
