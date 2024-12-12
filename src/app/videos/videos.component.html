@@ -1,12 +1,15 @@
 <h1>  VIDEOS  </h1>
 <div class="video-grid">
     <div *ngFor="let video of videos" class="video-card">
+      
       <img [src]="video.thumbnail" alt="Thumbnail" class="video-thumbnail">
+      <a href="reproductor">
       <div class="video-info">
         <h3 class="video-title">{{ video.title }}</h3>
         <p class="video-channel">{{ video.channel }}</p>
         <p class="video-date">{{ video.date }}</p>
       </div>
+    </a>
     </div>
   </div>
   
