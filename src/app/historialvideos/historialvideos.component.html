@@ -1,1 +1,21 @@
-<h1>  HISTORIAL VIDEOS  </h1>
+<div class="video-history">
+    <!-- Encabezados de las columnas -->
+    <div class="header-row">
+      <span>Miniatura</span>
+      <span>Título</span>
+      <span>Fecha</span>
+      <span>Fecha Visualización</span>
+    </div>
+  
+    <!-- Lista de videos -->
+    <div *ngFor="let video of videoHistory" class="video-item">
+        <img [src]="video.thumbnail" alt="Thumbnail" class="video-thumbnail">
+      <div class="video-info">
+        <h3>{{ video.title }}</h3>
+        <p>{{ video.channel }}</p>
+      </div>
+      <span>{{ video.uploadDate }}</span>
+      <span>{{ video.viewedDate }}</span>
+    </div>
+  </div>
+  
